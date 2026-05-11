@@ -10,6 +10,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.uicomponents.button.BtnBig;
 import com.example.uicomponents.button.BtnCustom;
+import com.example.uicomponents.editText.EtBig;
+import com.example.uicomponents.editText.EtCustom;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,10 +30,17 @@ public class MainActivity extends AppCompatActivity {
         BtnBig btnEnable = findViewById(R.id.btnEnable);
         BtnBig btnTertiary = findViewById(R.id.btnTertiary);
         BtnBig btnSecondary = findViewById(R.id.btnSecondary);
+        EtBig etDisactive = findViewById(R.id.etDisactive);
+        EtBig etActive = findViewById(R.id.etActive);
+        EtBig etError = findViewById(R.id.etError);
 
         btnPrimary.init("Отправить", BtnCustom.TypeButton.PRIMARY);
         btnEnable.setEnabled(false);
         btnTertiary.init("Авторизоваться", BtnCustom.TypeButton.TERTIARY);
         btnSecondary.init("Забыли пароль????", BtnCustom.TypeButton.SECONDARY);
+
+        etDisactive.init("Неактивна", "", "Search...", EtCustom.TypeEditText.DISACTIVE);
+        etActive.init("Aктивна", "", "", EtCustom.TypeEditText.ACTIVE);
+        etError.init("Ошибка", "ААААА", "", EtCustom.TypeEditText.ERROR);
     }
 }
