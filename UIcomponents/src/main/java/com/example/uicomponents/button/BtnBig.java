@@ -20,6 +20,7 @@ public class BtnBig extends BtnCustom{
         super(context, attributeSet, defStyleAttr);
     }
 
+
     @Override
     public void init(Integer idLayout){
         super.init(R.layout.button);
