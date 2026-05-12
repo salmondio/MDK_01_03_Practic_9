@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -13,7 +14,9 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import com.example.uicomponents.R;
 
 public class EtCustom extends ConstraintLayout {
+    public TextView TvName;
     public EditText Et;
+    public TextView TvError;
 
     public enum TypeEditText{
         ACTIVE, DISACTIVE, ERROR
@@ -40,10 +43,14 @@ public class EtCustom extends ConstraintLayout {
 
         LayoutInflater.from(this.getContext()).inflate(idLayout, this, true);
         Et = findViewById(R.id.et);
+        TvName = findViewById(R.id.name);
+        TvError = findViewById(R.id.text_error);
+
     }
 
-    public void init(String name, String text, String hint, EtCustom.TypeEditText typeEditText){
-
+    public void init(String name, String text, String hint, String error, EtCustom.TypeEditText typeEditText){
+        TvName.setText(name);
+        TvError.setText(error);
         Et.setHint(hint);
         Et.setText(text);
 

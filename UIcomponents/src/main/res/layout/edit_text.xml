@@ -5,10 +5,10 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/name"
         android:text="Test"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"/>
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/et"
@@ -22,8 +22,13 @@
         android:stateListAnimator="@null"
         android:textAllCaps="false"
         android:textColor="#000000"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/name"/>
 
-    <!-- -->
-
+    <TextView
+        android:id="@+id/text_error"
+        android:textColor="#ff1a20"
+        android:text="Test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

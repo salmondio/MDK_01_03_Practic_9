@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
         btnTertiary.init("Авторизоваться", BtnCustom.TypeButton.TERTIARY);
         btnSecondary.init("Забыли пароль????", BtnCustom.TypeButton.SECONDARY);
 
-        etDisactive.init("Неактивна", "", "Search...", EtCustom.TypeEditText.DISACTIVE);
-        etActive.init("Aктивна", "", "", EtCustom.TypeEditText.ACTIVE);
-        etError.init("Ошибка", "ААААА", "", EtCustom.TypeEditText.ERROR);
+        etDisactive.init("Неактивна", "", "Search...", "", EtCustom.TypeEditText.DISACTIVE);
+        etActive.init("Aктивна", "", "", "", EtCustom.TypeEditText.ACTIVE);
+        etError.init("Ошибка", "ААААА", "", "error: sdifsifisfi", EtCustom.TypeEditText.ERROR);
     }
 }
